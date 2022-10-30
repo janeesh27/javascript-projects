@@ -1,6 +1,7 @@
 //   == equal to
 //   <= less than or equal to
 //   >= greatrer than or equal to
+//   !== not equal to
 
 var mybalance = 300;
 var nikeshoes = 79.99;
