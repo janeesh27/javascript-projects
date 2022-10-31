@@ -24,24 +24,35 @@ console.log(student1.age);
 //example2 other ways to create a abject
 
 var student2 = new Object();
-student2.firstName = "vasu";   // way 2
+student2.firstName = "vasu"; // way 2
 student2.lastName = "sharma";
 student2.age = 21;
 
 var student3 = {};
-student3.firstName = "janeesh";  // way3
+student3.firstName = "janeesh"; // way3
 student3.lastName = "singh";
 student3.age = 23;
 
-
 // now to push this 3 students to an empty array
 
-var students=[];
-students.push(student1,student2,student3)
+var students = [];
+students.push(student1, student2, student3);
 
-console.log(students)
-
+console.log(students);
 
 // javascript objects with functions
 
+var employees = [];
 
+function Employee(first, last, age, salary) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.salary = salary;
+}
+
+employees.push(new Employee('janeesh', 'singh', 22, 600000));
+employees.push(new Employee('vasu', 'sharma', 23, 700000));
+employees.push(new Employee('ayush', 'gupta', 24, 900000));
+
+console.log(employees);
